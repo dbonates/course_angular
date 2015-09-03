@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+  <html lang="en" ng-app="MainApp">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    
+    <title>Daniel Bonates :: Indie Developer</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=no">
+    
+    <link href="css/main.css" rel="stylesheet"> 
+
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-route.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/factories.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/diretives.js"></script>
+    
+
+  </head>
+  <body>
+  <course-title></course-title> 
+  
+  <div class="control-bar">
+    <back-btn ng-click="previous()"></back-btn><pagination></pagination><forward-btn ng-click="next()"></forward-btn>
+  </div>
+  <div class="content-wrap">
+    <div class="content">
+      <div ng-view></div>
+    </div>
+  </div>
+
+</body>
+</html>

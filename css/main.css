@@ -1,0 +1,159 @@
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+
+    /*border: 1px solid lightblue;*/
+}
+
+html, body {
+  height: 80%;
+}
+
+html, body, h1, h2, h3, h4, h5 {
+  font-family: "Avenir Next","Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  font-weight: 100;
+  color: #e35354;
+}
+
+.col-1 {
+  display: inline-block;
+  width: 33.33333%;
+  max-width: 220px;
+  vertical-align: top;
+}
+.col-8 {
+  display: inline-block;
+  width: 65.66667%;
+  vertical-align: top;
+}
+
+.content-wrap {
+  display: block;
+  position: relative;
+  margin: 30px;
+  height: 100%;
+}
+.content {
+  /*height: 100%;*/
+}
+
+.content p {
+  margin: 15px auto;
+  max-width: 640px;
+
+}
+
+course-title {
+  display: block;
+  font-weight: 100;
+  color: #fffef6;
+  font-size: 2.5em;
+  width: 100%;
+  background: #e7c560;
+  text-align: center;
+}
+course-title a {
+  text-decoration: none;
+  color: #fffef6;
+}
+
+.loading-wrap {
+  position: absolute;
+  display: table;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+.loading {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.control-bar {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  display: table;
+  background: #e7c560;
+}
+
+pagination {
+  display: table-cell;
+  vertical-align: middle;
+  /*background-color: red;*/
+  margin: 0 auto;
+  color: #fffef6;
+
+  
+}
+back-btn, forward-btn {
+  display: table-cell;
+  padding-top: 5px;
+  vertical-align: middle;
+  cursor: pointer;
+  line-height: 20px;
+  fill: #fffef6;
+}
+
+
+@media (max-width: 480px) {
+  .col-1 {
+    display: block;
+    width: 100%;
+  }
+  .col-8 {
+    display: block;
+    width: 100%;
+  }
+}
+
+
+
+.col {
+  border:0px solid rgba(0,0,0,0);
+  float:left;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+  -moz-background-clip:padding-box !important;
+  -webkit-background-clip:padding-box !important;
+  background-clip:padding-box !important;
+}
+
+@media screen and (min-width: 0px) {
+  
+  .col {
+    margin-left:2%;
+    padding:0 1.5%;
+  }
+  
+  .row .col:first-child {
+    margin-left:0;
+  }
+  
+  dt {
+    font-weight: bold;
+  }
+  
+  img {
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+  }
+  
+  .span_1 {
+    width:32.0%;
+  }
+  .span_2 {
+    width:66.0%;
+  }
+  .span_3 {
+    margin-left:0;
+    width:100%;
+  }
+}
